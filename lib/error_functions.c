@@ -1,10 +1,9 @@
 #include <stdarg.h>
-i  //#include "error_functions.h"
+//#include "error_functions.h"
+#include "../include/tlpi_hdr.h"
 #include "ename.c.inc"
-#include "tlpi_hdr.h"
 
-    NORETURN static void
-    terminate(Boolean useExit3) {
+NORETURN static void terminate(Boolean useExit3) {
     char *s;
     s = getenv("EF_DUMPCORE");
     if (s != NULL && *s != '\0')
