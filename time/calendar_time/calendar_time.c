@@ -2,7 +2,7 @@
 #include <locale.h>
 #include <sys/time.h>
 
-#include "../include/tlpi_hdr.h"
+#include "../../include/tlpi_hdr.h"
 
 
 #define SECONDS_IN_TROPICAL_YEAR (365.24219 * 24 * 60 * 60)
