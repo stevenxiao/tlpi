@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 char globBuff[65536];
-int  primes[] = {2, 3, 5, 7};
+int primes[] = {2, 3, 5, 7};
 
 static int
 square(int x)
@@ -18,17 +18,16 @@ doCalc(int val)
 {
     printf("The squar of %d is %d\n", val, square(val));
 
-    if(val < 1000)
+    if (val < 1000)
     {
         int t;
 
-        t = val * val *val;
+        t = val * val * val;
         printf("The cube of %d is %d", val, t);
     }
 }
 
-int
-main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
     static int key = 9973;
     static char mbuff[10240000];
@@ -38,5 +37,4 @@ main(int argc, char *argv[])
 
     doCalc(key);
     exit(EXIT_SUCCESS);
-
 }
